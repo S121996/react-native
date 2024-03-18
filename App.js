@@ -20,20 +20,20 @@ import 'react-native-gesture-handler';
   //p tag ==Text
   const name = 'Sumit';
 
-  const [counter,setCounter]=useState(0);
+  const [count,setCounter]=useState(0);
 const incrementValue =()=>{
-  setCounter(counter+1)//0+1=1
-  setCounter(counter+1)//0+1=1
-  setCounter(counter+1)
-  setCounter(counter+1)
+  setCounter(count+1)//0+1=1
+  setCounter(count+1)
+  setCounter(count+1)
+  setCounter(count+1)//0+1=1
 }
 
 const decrementValue =()=>{
   //if (Counter==0)
   //return}
-  if(counter<=0)
+  if(count<=0)
   return 
-setCounter(counter-1)
+setCounter(count-1)
 }
 
 const [value,setValue] = useState('Vishnu');
@@ -93,7 +93,7 @@ const updateData=()=>{
 <Button title="update data" 
       onPress={updateData}
       />
-
+<Text>Count:{count}</Text>
 <Button onPress={incrementValue} title='Increment'>
   
 </Button>
