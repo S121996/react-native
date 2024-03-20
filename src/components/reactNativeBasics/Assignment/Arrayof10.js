@@ -1,19 +1,19 @@
-import React from "react";
-import {View,Text} from 'react-native'
+// import React from "react";
+// import {View,Text} from 'react-native'
 
-const cityNames = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", 
-"Philadelphia", "San Antonio", "San Diego", "Dallas", "San Jose"];
+// const cityNames = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", 
+// "Philadelphia", "San Antonio", "San Diego", "Dallas", "San Jose"];
 
-const city=()=>{
+// const city=()=>{
     
 
-return(
-    <View>
-        <Text ></Text>
-    </View>
-)
-}
+// return(
+//     <View>
+//         <Text ></Text>
+//     </View>
+// )
+// }
 
-export default city
+// export default city
 
 
