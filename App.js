@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 // import BasicsOne from './src/components/reactNativeBasics/BasicsOne';
 // import TextInputComponent from './src/components/reactNativeBasics/TextInputComponent';
@@ -9,18 +9,20 @@ import { Text, View, StyleSheet } from 'react-native';
 // import ScrollviewComponent from './src/components/reactNativeBasics/DailyClass/ScrollviewComponent';
 import TextInputComponent from './src/components/reactNativeBasics/DailyClass/TextInpuComponent';
 const App = () => {
-
+  const styles = StyleSheet.create({
+   
+  })
   return (
     <View style={{ paddingHorizontal: 10, paddingTop:40 }}>
      <Text style={styles.text}>React Native</Text>
    <Text style={{fontSize:30}}>Hello React Native</Text>
-    {/* <BasicsOne />
-    <TextInputComponent /> */}
+     {/* <BasicsOne/> */}
+  
     
-   {/* <Todolist/>
-    <ImageComponent/>
-    <KeyboardAvoidingViewComponent/>
-  <ScrollviewComponent/> */}
+    {/* <Todolist/> */}
+    {/* <ImageComponent/> */}
+    {/* <KeyboardAvoidingViewComponent/> */}
+  {/* <ScrollviewComponent/> */}
   <TextInputComponent/>
     </View>
   )
