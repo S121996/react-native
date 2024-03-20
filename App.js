@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-import BasicsOne from './src/components/reactNativeBasics/BasicsOne';
+// import BasicsOne from './src/components/reactNativeBasics/BasicsOne';
 // import TextInputComponent from './src/components/reactNativeBasics/TextInputComponent';
 // import LoginUi from './src/components/reactNativeBasics/UIreactnative';
 // import Todolist from './src/components/reactNativeBasics/Assignment/TodolistComponent';
-import ImageComponent from './src/components/reactNativeBasics/ImageComponents';
-import KeyboardAvoidingViewComponent from './src/components/reactNativeBasics/DailyClass/KeyBoardAvoidComponents';
-import ScrollviewComponent from './src/components/reactNativeBasics/DailyClass/ScrollviewComponent';
+// import ImageComponent from './src/components/reactNativeBasics/ImageComponents';
+// import KeyboardAvoidingViewComponent from './src/components/reactNativeBasics/DailyClass/KeyBoardAvoidComponents';
+// import ScrollviewComponent from './src/components/reactNativeBasics/DailyClass/ScrollviewComponent';
 import TextInputComponent from './src/components/reactNativeBasics/DailyClass/TextInpuComponent';
 const App = () => {
 
@@ -17,10 +17,10 @@ const App = () => {
     {/* <BasicsOne />
     <TextInputComponent /> */}
     
-   <Todolist/>
+   {/* <Todolist/>
     <ImageComponent/>
     <KeyboardAvoidingViewComponent/>
-  <ScrollviewComponent/>
+  <ScrollviewComponent/> */}
   <TextInputComponent/>
     </View>
   )

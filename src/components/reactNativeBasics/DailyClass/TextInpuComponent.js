@@ -39,8 +39,6 @@ const TextInputComponent = () =>{
     )
 }
 
-export default TextInputComponent;
-
 const styles = StyleSheet.create({
     textInput:{
         borderWidth:1,
@@ -51,3 +49,7 @@ const styles = StyleSheet.create({
         borderRadius:10,
     }
 })
+
+
+export default TextInputComponent;
+

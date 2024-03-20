@@ -5,7 +5,7 @@ const ImageComponent = () => {
   return (
     <View style={{flex:1}}>
      <Image
-       source={require('../../assets/aws.png')}
+       source={require('../../assests/aws.png')}
        resizeMode='contain'
        style={{width:300}}
      />
