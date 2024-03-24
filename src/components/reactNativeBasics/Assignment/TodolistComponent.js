@@ -21,7 +21,7 @@ const addTodo=()=>{
         <View>
            <TextInput 
            placeholder="Enter Your Value" 
-           onChangeText={text => setText(text)}
+           onChangeText={text =>setText(text)}
            style={styles.textInput}
            value={value}
            />

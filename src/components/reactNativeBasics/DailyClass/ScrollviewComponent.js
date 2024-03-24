@@ -9,9 +9,9 @@ const ScrollviewComponent = () =>{
         // style={styles.container}
         // showsVerticalScrollIndicator={false}
         horizontal={true}
-        showsHorizontalScrollIndicator={false}
+        showsHorizontalScrollIndicator={true}
         >
-        <View style={{flexDirection:'colomn'}}>
+        <View style={{flexDirection:'row'}}>
          <View style={styles.card}>
             <Text>Phone</Text>
          </View>

@@ -7,7 +7,7 @@ const ImageComponent = () => {
      <Image
       //  source={require('../../assests/aws.png')}
        resizeMode='contain'
-       style={{width:300}}
+      //  style={{width:300}}
      />
      <Image
        source={{uri:'https://res.cloudinary.com/djxhf8jwg/image/upload/v1705810351/image-5_ohwt21.webp'}}

@@ -1,29 +1,55 @@
-// import React, { useState } from "react";
-// import {Text,View,TextInput,Button} from 'react-native'
+import React, {useState} from 'react';
+import {View, TextInput, Button} from 'react-native';
 
-// const LoginUi=()=>{
-// const [email ,setEmail]=useState('');
-// const [password ,setPassword]=useState('');
+const LoginScreen = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-// const Login=()=>{
-//     if(password.length>=6){
-//         console.log('Email:',email);
-//         console.log('Password:',password);
-//     }
-//     else{
-//         console.log('Password is invalid')
-//     }
-// }
+  const handleLogin = () => {
+    if (password.length < 6) {
+      console.log('Password must be at least 6 characters long');
+      return;
+    }
 
-// return(
-//     <View>
-//         <Text>Login</Text>
-//         <TextInput title="Enter your mail id" 
-//         value={email}
-//         onChangeText={(text)=> setEmail(text)}/>
-//         <Button title ="Login" onPress={LoginUi}></Button>
-//     </View>
-// )
-// }
+    console.log('Email:', email);
+    console.log('Password:', password);
 
-// export default LoginUi;
+    setEmail('');
+    setPassword('');
+  };
+
+  return (
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <TextInput
+        style={{
+          height: 40,
+          borderColor: 'gray',
+          borderWidth: 1,
+          marginBottom: 10,
+          padding: 5,
+        }}
+        placeholder="Email"
+        value={email}
+        onChangeText={setEmail}
+        keyboardType="email-address"
+        autoCapitalize="none"
+      />
+      <TextInput
+        style={{
+          height: 40,
+          borderColor: 'gray',
+          borderWidth: 1,
+          marginBottom: 10,
+          padding: 5,
+        }}
+        placeholder="Password"
+        value={password}
+        onChangeText={setPassword}
+        secureTextEntry={true}
+      />
+      <Button title="Login" onPress={handleLogin} />
+    </View>
+  );
+};
+
+export default LoginScreen;
