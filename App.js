@@ -8,24 +8,32 @@ import { Text, View, StyleSheet } from 'react-native';
 // import KeyboardAvoidingViewComponent from './src/components/reactNativeBasics/DailyClass/KeyBoardAvoidComponents';
 // import ScrollviewComponent from './src/components/reactNativeBasics/DailyClass/ScrollviewComponent';
 // import TextInputComponent from './src/components/reactNativeBasics/DailyClass/TextInpuComponent';
-import CityListComponent from './src/components/reactNativeBasics/Assignment/Arrayof10';
-import LoginScreen from './src/components/reactNativeBasics/Assignment/UIreactnative';
+// import CityListComponent from './src/components/reactNativeBasics/Assignment/Arrayof10';
+// import LoginScreen from './src/components/reactNativeBasics/Assignment/UIreactnative';
+// import YourApp from './src/components/Practice/first';
+// import Secondapp from './src/components/Practice/second';
+import Thirdpart from './src/components/Practice/third';
 const App = () => {
   const styles = StyleSheet.create({
    
   })
   return (
     <View style={{ paddingHorizontal: 10, paddingTop:40 }}>
-     <Text style={styles.text}>R</Text>
-   <Text style={{fontSize:30}}>H</Text>
+     <Text style={styles.text}></Text>
+   <Text style={{fontSize:30}}></Text>
+
+   {/* <YourApp/> */}
+   {/* <Secondapp/> */}
+ <Thirdpart/>
      {/* <BasicsOne/> */}
     {/* <Todolist/> */}
     {/* <ImageComponent/> */}
     {/* <KeyboardAvoidingViewComponent/> */}
     {/* <LoginScreen/> */}
-    <CityListComponent/>
+    {/* <CityListComponent/> */}
   {/* <ScrollviewComponent/> */}
   {/* <TextInputComponent/> */}
+
     </View>
   )
 }
