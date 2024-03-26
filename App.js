@@ -12,7 +12,8 @@ import { Text, View, StyleSheet } from 'react-native';
 // import LoginScreen from './src/components/reactNativeBasics/Assignment/UIreactnative';
 // import YourApp from './src/components/Practice/first';
 // import Secondapp from './src/components/Practice/second';
-import Thirdpart from './src/components/Practice/third';
+// import Thirdpart from './src/components/Practice/third';
+import JSX from './src/components/Practice/JSX';
 const App = () => {
   const styles = StyleSheet.create({
    
@@ -24,7 +25,8 @@ const App = () => {
 
    {/* <YourApp/> */}
    {/* <Secondapp/> */}
- <Thirdpart/>
+ {/* <Thirdpart/> */}
+ <JSX/>
      {/* <BasicsOne/> */}
     {/* <Todolist/> */}
     {/* <ImageComponent/> */}
