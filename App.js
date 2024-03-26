@@ -13,7 +13,8 @@ import { Text, View, StyleSheet } from 'react-native';
 // import YourApp from './src/components/Practice/first';
 // import Secondapp from './src/components/Practice/second';
 // import Thirdpart from './src/components/Practice/third';
-import JSX from './src/components/Practice/JSX';
+// import JSX from './src/components/Practice/JSX';
+import Components from './src/components/Practice/Components';
 const App = () => {
   const styles = StyleSheet.create({
    
@@ -26,7 +27,8 @@ const App = () => {
    {/* <YourApp/> */}
    {/* <Secondapp/> */}
  {/* <Thirdpart/> */}
- <JSX/>
+ {/* <JSX/> */}
+ <Components/>
      {/* <BasicsOne/> */}
     {/* <Todolist/> */}
     {/* <ImageComponent/> */}
