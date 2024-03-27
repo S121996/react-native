@@ -15,7 +15,8 @@ import { Text, View, StyleSheet } from 'react-native';
 // import Thirdpart from './src/components/Practice/third';
 // import JSX from './src/components/Practice/JSX';
 // import Components from './src/components/Practice/Components';
-import ButtononPress from './src/components/Practice/ButtononPress';
+// import ButtononPress from './src/components/Practice/ButtononPress';
+import State from './src/components/Practice/state';
 const App = () => {
   const styles = StyleSheet.create({
    
@@ -30,7 +31,9 @@ const App = () => {
  {/* <Thirdpart/> */}
  {/* <JSX/> */}
  {/* <Components/> */}
- <ButtononPress/>
+ {/* <ButtononPress/> */}
+ <State/>
+
      {/* <BasicsOne/> */}
     {/* <Todolist/> */}
     {/* <ImageComponent/> */}

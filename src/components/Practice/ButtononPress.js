@@ -10,7 +10,7 @@ const ButtononPress = () => {
   return (
     <View>
       <Text style={{fontSize:40}}>{data}</Text>
-      <Button title='On Press' onPress={fruit()} color={'green'}></Button>
+      <Button title='On Press' onPress={fruit} color={'green'}></Button>
       <Button title='Press' onPress={()=>fruit("Hello")} color={'lightgreen'}></Button>
     </View>
   )
