@@ -1,6 +1,6 @@
 import { View, Text ,StyleSheet } from 'react-native'
 import React from 'react'
-
+import EXStyles from './Stylesheet';
 const Style = () => {
   return (
     <View>
@@ -9,6 +9,8 @@ const Style = () => {
       <Text style={styles.textBox}>Style in React Native</Text>
       <Text style={{fontSize:40,color:'red'}}>Style in React Native</Text>
       <Text style={styles.textBox}>Style in React Native</Text>
+      <Text style={EXStyles.textBox}>Style in React Native</Text>
+      <Text style={[EXStyles.textBox,EXStyles.textBox,{marginTop:20}]}>Style in React Native</Text>
     
     </View>
   )
@@ -17,7 +19,7 @@ const Style = () => {
 const styles=StyleSheet.create({
     textBox:{
         color: '#fff',
-        fontSize:40,
+        fontSize:25,
         backgroundColor:'lightblue',
         margin:10,
         padding:10,
