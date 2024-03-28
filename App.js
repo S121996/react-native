@@ -21,7 +21,8 @@ import { Text, View, StyleSheet } from 'react-native';
 // import Style from './src/components/Practice/style';
 // import HandlingTextInput from './src/components/Practice/HandlingTextInput';
 // import TextForm from './src/components/Practice/TextForm';
-import ListFlatList from './src/components/Practice/ListWithFlatList'; 
+// import ListFlatList from './src/components/Practice/ListWithFlatList'; 
+import ListWithMapFunction from './src/components/Practice/ListWithMapFunction';
 const App = () => {
   const styles = StyleSheet.create({
    
@@ -42,8 +43,8 @@ const App = () => {
 {/* <Style/> */}
 {/* <HandlingTextInput/> */}
 {/* <TextForm/> */}
-<ListFlatList/>
-
+{/* <ListFlatList/> */}
+<ListWithMapFunction/>
      {/* <BasicsOne/> */}
     {/* <Todolist/> */}
     {/* <ImageComponent/> */}
