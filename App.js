@@ -18,7 +18,10 @@ import { Text, View, StyleSheet } from 'react-native';
 // import ButtononPress from './src/components/Practice/ButtononPress';
 // import State from './src/components/Practice/state';
 // import PropsUse from './src/components/Practice/Props';
-import Style from './src/components/Practice/style';
+// import Style from './src/components/Practice/style';
+// import HandlingTextInput from './src/components/Practice/HandlingTextInput';
+// import TextForm from './src/components/Practice/TextForm';
+import ListFlatList from './src/components/Practice/ListWithFlatList'; 
 const App = () => {
   const styles = StyleSheet.create({
    
@@ -36,7 +39,11 @@ const App = () => {
  {/* <ButtononPress/> */}
  {/* <State/> */}
  {/* <PropsUse/> */}
-<Style/>
+{/* <Style/> */}
+{/* <HandlingTextInput/> */}
+{/* <TextForm/> */}
+<ListFlatList/>
+
      {/* <BasicsOne/> */}
     {/* <Todolist/> */}
     {/* <ImageComponent/> */}

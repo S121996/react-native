@@ -10,7 +10,7 @@ const Style = () => {
       <Text style={{fontSize:40,color:'red'}}>Style in React Native</Text>
       <Text style={styles.textBox}>Style in React Native</Text>
       <Text style={EXStyles.textBox}>Style in React Native</Text>
-      <Text style={[EXStyles.textBox,EXStyles.textBox,{marginTop:20}]}>Style in React Native</Text>
+      <Text style={[EXStyles.textBox,EXStyles.textBox,{marginTop:20, marginBottom:5 ,textAlign:'center'}]}>Style in React Native</Text>
     
     </View>
   )
