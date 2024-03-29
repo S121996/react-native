@@ -48,7 +48,7 @@ const TextForm = () => {
             display ?
             <View> 
                 <Text style={{fontSize:25}}>User Name is:{name}</Text>
-                <Text style={{fontSize:25}} >User Password is:{password}</Text>
+                {/* <Text style={{fontSize:25}} >User Password is:{password}</Text> */}
                 <Text style={{fontSize:25}}>User Email is:{email}</Text>
                 
 
