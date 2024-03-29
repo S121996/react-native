@@ -23,7 +23,8 @@ import { Text, View, StyleSheet } from 'react-native';
 // import TextForm from './src/components/Practice/TextForm';
 // import ListFlatList from './src/components/Practice/ListWithFlatList'; 
 // import ListWithMapFunction from './src/components/Practice/ListWithMapFunction';
-import DynamicGrid from './src/components/Practice/DynamicGrid';
+// import DynamicGrid from './src/components/Practice/DynamicGrid';
+import LoopWithFlatlist from './src/components/Practice/LoopWithFlatlist';
 const App = () => {
   const styles = StyleSheet.create({
    
@@ -46,7 +47,8 @@ const App = () => {
 {/* <TextForm/> */}
 {/* <ListFlatList/> */}
 {/* <ListWithMapFunction/> */}
-<DynamicGrid/>
+{/* <DynamicGrid/> */}
+<LoopWithFlatlist/>
      {/* <BasicsOne/> */}
     {/* <Todolist/> */}
     {/* <ImageComponent/> */}
