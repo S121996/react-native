@@ -19,7 +19,7 @@ const LoginScreen = () => {
   };
 
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+    <View>
       <TextInput
         style={{
           height: 40,
@@ -28,7 +28,7 @@ const LoginScreen = () => {
           marginBottom: 10,
           padding: 5,
         }}
-        placeholder="Email"
+        placeholder="Enter Email id"
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
@@ -42,7 +42,7 @@ const LoginScreen = () => {
           marginBottom: 10,
           padding: 5,
         }}
-        placeholder="Password"
+        placeholder="Enter Password"
         value={password}
         onChangeText={setPassword}
         secureTextEntry={true}
