@@ -1,6 +1,7 @@
-import { View, Text,Button,Image,ScrollView,StyleSheet } from 'react-native'
+import { View, Text,Button,Image,ScrollView,StyleSheet, Pressable } from 'react-native'
 import React,{useEffect,useState} from 'react'
 import axios from 'axios';
+import { FlatList } from 'react-native-gesture-handler';
 
 const UseEffectComponents = () => {
     const [count, setCount] = useState(0);
@@ -30,6 +31,11 @@ useEffect(()=>{
     fetchData();
 },[])
 
+const deleteItem = (id) => {
+    const newData = data.filter(product => product.id !== id);
+    setData(newData);
+  };
+
   return (
     <ScrollView
     showsVerticalScrollIndicator={false}
@@ -39,17 +45,30 @@ useEffect(()=>{
       title='increment'
       onPress={()=>setCount(count+1)}
       />
+     {/* <Pressable  onPress={}/> */}
+     {/* <Button style={{marginTop:5}}
+      title='Delete'
+      onPress={()=>setCount(count-1)}
+      /> */}
 
-      {data.map((product)=>(
-        <View style={styles.productContainer}>
+      {data.map((product,index)=>(
+        <View style={styles.productContainer} key={index}>
         <Image
         source={{uri: product.image}}
         style={{width:100, height:100}}
         />    
-        <View style={{marginLeft:10}}>
-        <Text style={styles.headerText}>{product.title.substring(0,10)}</Text>
+        <View style={{marginLeft:20}}>
+        <Text style={styles.headerText}>{product.title.substring(0,10) }
+        <Pressable onPress={()=>deleteItem (product.id)}>
+          <Text style={{color:'blue',fontSize:16,fontWeight:'bold',paddingLeft:30}}>X</Text>
+            </Pressable></Text>
+        {/* <Button title="Delete" onPress={() => deleteItem(product.id)} /> */}
         <Text style={styles.text}>Rating: {product.rating.rate} ({product.rating.count})</Text>
         <Text style={styles.text}>₹ {product.price}</Text>
+       
+      
+
+        
         </View>
         </View>
       ))}

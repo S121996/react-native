@@ -7,11 +7,11 @@ const ScrollviewComponent = () =>{
     return(
         <ScrollView 
         // style={styles.container}
-        // showsVerticalScrollIndicator={false}
+      //   showsVerticalScrollIndicator={false}
         horizontal={true}
         showsHorizontalScrollIndicator={true}
         >
-        <View style={{flexDirection:'row'}}>
+        <View style={{flexDirection:'column'}}>
          <View style={styles.card}>
             <Text>Phone</Text>
          </View>

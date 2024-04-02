@@ -9,6 +9,10 @@ const TextInputComponent = () =>{
     const displayValue = () =>{
      setData(value)
     }
+
+    // const display = () =>{
+    //     setData(value)
+    //    }
     return(
      <View>
         <TextInput
@@ -21,7 +25,10 @@ const TextInputComponent = () =>{
         //  dfd
         value={text}
         onChangeText={text=>setText(text)}
+
         />
+        {/* <Text>{value}</Text> */}
+        {/* <Button title="click" onPress={display}></Button> */}
 
         <TextInput
          placeholder="Enter Value"
