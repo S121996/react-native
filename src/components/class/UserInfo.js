@@ -1,7 +1,7 @@
 
 import {Text, View} from 'react-native'
 
-const UserInfo =(props)=>{
+const UserInfos =(props)=>{
     console.log(props) // 1. {name:'Rahul', city:'Delhi'} 2. {name:'Bhavesh', city:'Jaipur'}, 3. {}
     return (
         <View>
@@ -11,4 +11,4 @@ const UserInfo =(props)=>{
     )
 }
 
-export default UserInfo;
+export default UserInfos;

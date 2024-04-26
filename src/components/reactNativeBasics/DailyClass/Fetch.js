@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 const FetchDataComponent = () => {
     const [data, setData] = useState([]);
+
     // const fetchData = async () =>{
     //    const response =await fetch(`https://fakestoreapi.com/products`);
     //    console.log(response)

@@ -19,7 +19,7 @@ const TextInputComponent = () =>{
          placeholder="Enter your Name"
          style={styles.textInput}
          multiline
-         numberOfLines={4}
+         numberOfLines={2}
          textAlignVertical="top"
          editable
         //  dfd
