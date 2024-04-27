@@ -17,25 +17,72 @@ import {Text, View, StyleSheet, Button} from 'react-native';
 // import ActivityIndicatorComponent from './src/components/reactNativeBasics/DailyClass/ActivityIndicatorComponent';
 // import UseStateComponent from './src/components/class/UseStateComponents';
 import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import UseEffectComponent from './src/components/reactNativeBasics/DailyClass/UseEffectComponents';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './src/components/reactNativeBasics/Home';
 import ProductListingComponent from './src/components/ProductListingComponents';
 import Profile from './src/components/Profile';
 import ProductCard from './src/components/ProductCard';
+import AsyncStorageComponent from './src/components/reactNativeBasics/DailyClass/AsyncStorageComponent';
+import ProductDetails from './src/components/ProductDetails';
+// const Tab =createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
 
-const Tab =createBottomTabNavigator();
 const App = () => {
   return (
-   <NavigationContainer>
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home}/>
-      <Tab.Screen name="Products" component={ProductListingComponent}/>
-      <Tab.Screen name="Profile" component={Profile}/>
-      <Tab.Screen name="ProductCard" component={ProductCard}/>
-    </Tab.Navigator>
-   </NavigationContainer>
+  //  <NavigationContainer>
+  //   <Tab.Navigator>
+  //     <Tab.Screen name="Home" component={Home}/>
+  //     <Tab.Screen name="Products" component={ProductListingComponent}/>
+  //     <Tab.Screen name="Profile" component={Profile}/>
+  //     <Tab.Screen name="ProductCard" component={ProductCard}/>
+  //   </Tab.Navigator>
+  //  </NavigationContainer>
+  <NavigationContainer>
+  <Stack.Navigator 
+  initialRouteName='Storage'
+ //  screenOptions={{
+ //   title:'Home',
+ //   headerStyle:{
+ //     backgroundColor:'#008080'
+ //   },
+ //   headerTintColor:'#fff',
+ //   headerTitle:{
+ //     fontWeight:'bold'
+ //   }
+ //  }}
+  >
+  <Stack.Screen name='Products' component={ProductListingComponent} 
+  options={{
+   title:'Products Listing',
+   headerStyle:{
+     backgroundColor:'#008080'
+   },
+   headerTintColor:'#fff',
+   headerTitle:{
+     fontWeight:'bold'
+   }
+  }}
+  />
+  <Stack.Screen name='Home' component={Home}
+  options={{
+   title:'Home',
+   headerStyle:{
+     backgroundColor:'#008080'
+   },
+   headerTintColor:'#fff',
+   headerTitle:{
+     fontWeight:'bold'
+   }
+  }}
+  />
+  <Stack.Screen name='Product Details' component={ProductDetails} />
+  <Stack.Screen name='Storage' component={AsyncStorageComponent} 
+  options={{headerShown:false}}
+  />
+ </Stack.Navigator>
+ </NavigationContainer>
   );
 };
 // const Home=(props)=>{
